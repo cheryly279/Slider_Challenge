@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Asset Assignment</title>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui.structure.min.css">
+</head>
+<body>
+  <div class="assessed-income">
+    <div class="assessed-top">
+      <div class="assessed-amount">
+        $27,000
+      </div>
+      <svg height="14" width="20" class="assessed-pointer">
+        <polygon points="0,0 10,14 20,0" style="fill:white;" />
+      </svg>
+    </div>
+    <div class="assessed-range">
+      <div class="assessed-affordable">
+        <hr class="color-bar" noshade />
+        <div class="desc">
+          Affordable
+        </div>
+      </div>
+      <div class="assessed-medium">
+        <hr class="color-bar" noshade />
+        <div class="desc">
+          Risky
+        </div>
+      </div>
+      <div class="assessed-danger">
+        <hr class="color-bar" noshade />
+        <div class="desc">
+          Not Possible
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="annual-income">
+      <label class="income-label" for="income-input">Annual Income</label><br />
+      <input type="text" id="income-input" value="5,000"></input>
+      <div class="symbol">$</div>
+      <div id="income-slider"></div>
+  </div>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="slider.js"></script>
+</body>

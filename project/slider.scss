@@ -1,0 +1,158 @@
+$primary-font-color: #8c8c8c;
+$grey-background: #f4f4f6;
+$affordable-color: #6da051;
+$medium-color: #f3a632;
+$danger-color: #e93f33;
+$grey-bar-light: #e6e6e6;
+$grey-bar-dark: #cdcdcd;
+$slider-handle-color: #4ca8de;
+
+
+body {
+  color: $primary-font-color;
+  font-family: Arial;
+  margin: 16px;
+  max-width: 640px;
+  min-width: 320px;
+}
+
+
+
+.assessed-income {
+  overflow: auto;
+}
+
+.assessed-top {
+  display: inline-block;
+  position: relative;
+
+  .assessed-amount {
+    font-size: 40px;
+  }
+
+  .assessed-pointer {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.assessed-range {
+  font-size: 14px;
+
+  .assessed-affordable, .assessed-medium, .assessed-danger {
+    float: left;
+  }
+
+  .assessed-affordable {
+    width: 58%;
+
+    .color-bar {
+      background-color: $affordable-color;
+    }
+  }
+
+  .assessed-medium {
+    width: 9%;
+
+    .color-bar {
+      background-color: $medium-color;
+    }
+
+    .desc {
+      margin-left: -20px;
+    }
+  }
+
+  .assessed-danger {
+    width: 33%;
+
+    .color-bar {
+      background-color: $danger-color;
+    }
+
+    .desc {
+      text-align: right;
+    }
+  }
+
+  .color-bar {
+    height: 16px;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  .desc {
+    background-color: $grey-background;
+    padding: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+.annual-income {
+  background-color: $grey-background;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+  position: relative;
+  z-index: 0;
+  clear: both;
+}
+
+#income-input {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.symbol {
+  position: absolute;
+  color: #000000;
+  font-size: 16px;
+  z-index: 1;
+  top: 38px;
+  left: 15px;
+}
+
+.income-label {
+  border-bottom: 1px dotted #458c68;
+}
+
+#income-slider {
+  float: left;
+  clear: left;
+  width: 100%;
+  height: 8px;
+  background-color: $grey-bar-light;
+  border-radius: 3px;
+
+  .ui-slider-range { 
+    background-color: $grey-bar-dark;
+    border-radius: 3px;
+  }
+
+  .ui-slider-handle { 
+    background-color: $slider-handle-color;
+    border-radius: 50%;
+    margin-left: 0;
+    height: 18px;
+    width: 18px;
+    outline: 0;
+  }
+}

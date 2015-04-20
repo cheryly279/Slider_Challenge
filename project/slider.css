@@ -1,0 +1,102 @@
+body {
+  color: #8c8c8c;
+  font-family: Arial;
+  margin: 16px;
+  max-width: 640px;
+  min-width: 320px; }
+
+.assessed-income {
+  overflow: auto; }
+
+.assessed-top {
+  display: inline-block;
+  position: relative; }
+  .assessed-top .assessed-amount {
+    font-size: 40px; }
+  .assessed-top .assessed-pointer {
+    position: absolute;
+    left: 0px; }
+
+.assessed-range {
+  font-size: 14px; }
+  .assessed-range .assessed-affordable, .assessed-range .assessed-medium, .assessed-range .assessed-danger {
+    float: left; }
+  .assessed-range .assessed-affordable {
+    width: 58%; }
+    .assessed-range .assessed-affordable .color-bar {
+      background-color: #6da051; }
+  .assessed-range .assessed-medium {
+    width: 9%; }
+    .assessed-range .assessed-medium .color-bar {
+      background-color: #f3a632; }
+    .assessed-range .assessed-medium .desc {
+      margin-left: -20px; }
+  .assessed-range .assessed-danger {
+    width: 33%; }
+    .assessed-range .assessed-danger .color-bar {
+      background-color: #e93f33; }
+    .assessed-range .assessed-danger .desc {
+      text-align: right; }
+  .assessed-range .color-bar {
+    height: 16px;
+    border: none;
+    border-radius: 0px;
+    margin: 0; }
+  .assessed-range .desc {
+    background-color: #f4f4f6;
+    padding: 4px; }
+
+.annual-income {
+  background-color: #f4f4f6;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+  position: relative;
+  z-index: 0;
+  clear: both; }
+
+#income-input {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+.symbol {
+  position: absolute;
+  color: #000000;
+  font-size: 16px;
+  z-index: 1;
+  top: 38px;
+  left: 15px; }
+
+.income-label {
+  border-bottom: 1px dotted #458c68; }
+
+#income-slider {
+  float: left;
+  clear: left;
+  width: 100%;
+  height: 8px;
+  background-color: #e6e6e6;
+  border-radius: 3px; }
+  #income-slider .ui-slider-range {
+    background-color: #cdcdcd;
+    border-radius: 3px; }
+  #income-slider .ui-slider-handle {
+    background-color: #4ca8de;
+    border-radius: 50%;
+    margin-left: 0;
+    height: 18px;
+    width: 18px;
+    outline: 0; }
+
+/*# sourceMappingURL=slider.css.map */
